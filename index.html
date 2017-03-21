@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+    <title>Mary's Peak Viewshed Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="The major cities in Oregon" />
+    <meta property="og:url" content="http://cdn.rawgit.com/jakobzhao/storymap/master/index.html" />
+    <meta property="og:description" content="This is an example of map story." />
+    <meta property="og:image" content="img/social.png" />
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!--facebook and info icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--storymap stylesheet -->
+    <link rel="stylesheet" type="text/css" href="storymap.css" />
+
+    <!--use a better font for this web map-->
+    <link href='http://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" type="text/css" href="css/storymap.css">
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!--add required libraries-->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--add ajax based data transmission-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--storymap javascript library -->
+    <script src="storymap.js"></script>
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    </div>
+    <!--facebook icon-->
+    <a class="fa fa-facebook-square social" href="https://www.facebook.com/sharer?u=http%3A%2F%2Fcdn.rawgit.com%2Fnathanvancleave%2Fgeog371storymap%2Fmaster%2Findex.html" target="_blank"></a>
+    <!--info icon-->
+    <i class="fa fa-info-circle social" style="top:50px" data-toggle="modal" data-target="#info-modal"></i>
+</div>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 main">
+            <h2 class="page-header">Alternative Locations for Communications Equipment On Mary's Peak<br/></h2>
+                <div class="subtitle">Nathan Van Cleave - Oregon State University</div>
+            <section data-scene="scene1">
+                <h2>Mary's Peak</h2>
+                <p>Mary’s Peak, sitting 15 miles west of Corvallis, Oregon is the highest point in the Coastal Mountain Range rising to 4,097ft. On-going tectonic forces raised the basaltic seafloor to it’s current height 30 million years ago, and continue to push it higher</p>
+                <img src="lookingnorth.jpg" class="img-responsive" alt="responsive image" alt-text="the flag of oregon">
+                <p>Picture: Looking North from the summit</p>
+            </section>
+
+            <section data-scene="scene2">
+                <h2>At the summit</h2>
+                <p>
+                    Enoying the 360 degree views year-round are radio communication towers.
+                    Over a dozen different agencies use this site to relay communications. From the Siuslaw National Forest
+                    and the Bonneville Power Anministration (BPA) who must stay in contact with field crews,
+                    to emergency response systems including state police and fire departments, the site's location is critical.
+                </p>
+                <img src="cold.jpg" class="img-responsive">
+                <p></p>
+                <p>
+                    "From the Siuslaw’s Corvallis headquarters, a radio signal is beamed to the mountaintop and fans out through
+                    a system of 17 repeaters to cover the entire 633,000-acre forest, which stretches along the coast from Tillamook
+                    to Coos Bay and inland to Marys Peak. The system provides two-way voice communications for employees in the
+                    field through 200 vehicle-mounted radios and 600 handheld units, even in remote areas with no cellphone service."
+                </p>
+                <p></p>
+                <p>
+                    -Albany Democrat-herold
+                </p>
+            </section>
+            <section data-scene="scene3">
+                <h2>A call for change</h2>
+                <p>
+                    The BPA is looking to upgrade aging equipment at the site, which EPA regulations require
+                    and environmental study for first along with allowing for public comment. Public opinion
+                    is generally mixed between wanting the site to continue being used as it currently is, and
+                    wanting the site altered or removed altogether.
+                </p>
+                <img src="microwave.jpg" class="img-responsive">
+            </section>
+            <section data-scene="scene4">
+                <h2>Alternative Locations</h2>
+                <p>
+                    To be a viable alternative any new site must provide coverage similar to the current site.
+                    This is to ensure that the many agencies who rely on the single site as a critical component of
+                    their communications network will not be forced to add many new towers to make up for the loss.
+                </p>
+                <p>
+                    There are four options that could be considered as starting points for an alternative site investigation.
+                    Each one is away from the summit, yet still prominent enough to offer a large amount of coverage.
+                    The four sites are:
+                </p>
+                <p>West Point</p>
+                <p>FAA</p>
+                <p>Mary's Peak East</p>
+                <p>Opposite Hill</p>
+            </section>
+            <section data-scene="scene5">
+                <h2>West Point</h2>
+                <p>
+                    A local nonprofit citizens group, Mary’s Peak Alliance Committee,has proposed moving the communications
+                    equipment to West Point—a communications site 1 mile west of the Mary’s Peak that is operated and maintained by the City of Corvallis.
+                </p>
+            </section>
+            <section data-scene="scene6">
+                <h2>FAA</h2>
+                <p>
+                    In the same region as West Point there is another communications site owned and operated by the Federal Aviation Administration (FAA).
+                    Both the West Point and FAA site have the benefit of power and some infrastructure already in place
+                    negating the need for additional spending.
+                </p>
+            </section>
+            <section data-scene="scene7">
+                <h2>Opposite Hill</h2>
+                <p>
+                    The second highest point in the area is a hill opposite of the mountain's summit, called Opposite Hill
+                    here.
+                </p>
+            </section>
+            <section data-scene="scene8">
+                <h2>Mary's Peak East</h2>
+                <p>
+                    Bill Gallantly, a retired engineer and Mary’s Peak Alliance member, has his own proposal.
+                    It would involve burying the building structures in a concrete bunker on the east slope, and moving
+                    the towers 100 yards east of their current location. This would allow the towers to still utilize the
+                    high vantage point while clearing the bald summit of any human obstruction.
+                </p>
+            </section>
+            <section data-scene="scene9">
+                <h2>Comparisons</h2>
+                <p>
+                    Each of these four sites have costs and benefits associated with them. Determining which one is the
+                    best alternative to the current site requires weighting these costs and benefits against each other.
+                    One cost, however, may outweigh all others; coverage.
+                </p>
+                <p>
+                    Without adequate coverage agencies may need to add more communications sites to make up the difference.
+                    To quantifiably determine the best of these four alternative sites a viewshed analysis can be run using GIS.
+                </p>
+            </section>
+            <section data-scene="scene10">
+                <h2>How viewshed analysis works</h2>
+                <p>
+                    Viewshed analysis in GIS is the determination of line-of-site visibility from one geographic point to another.
+                </p>
+                <p>
+                    The computation for a viewshed is the process of considering the elevation of all data cells between
+                    two points and determining if there are any with a high enough elevation value to impede line-of-sight.
+                </p>
+                <p>
+                    A Digital Elevation Model (DEM) is a raster dataset that holds location and elevation data for each cell.
+                    It can be derived by methods of photogrammetry, interpolation of contours, or by LiDAR.
+                </p>
+                <p>
+                    For this analysis an 10 meter resolution NED (National Elevation Dataset) DEM from the USGS was used.
+                    This particular DEM was created by photogrammetric methods.
+                </p>
+                <p>
+                    Shown here in red is the current communication's site viewshed.
+                </p>
+            </section>
+            <section data-scene="scene11">
+                <h2>Results:</h2>
+                <h2>West Point</h2>
+                <p>Green areas represent the area visible from the West Point alternative site.
+                </p>
+            </section>
+            <section data-scene="scene12">
+                <h2>FAA</h2>
+                <p>Green areas represent the area visible from the FAA alternative site.
+                </p>
+            </section>
+            <section data-scene="scene13">
+                <h2>Mary's Peak East</h2>
+                <p>Green areas represent the area visible from the Mary's Peak East alternative site.
+                </p>
+            </section>
+            <section data-scene="scene14">
+                <h2>Opposite Hill</h2>
+                <p>Green areas represent the area visible from the Opposite Hill alternative site.
+                </p>
+            </section>
+            <section data-scene="scene14">
+                <h2>Problem:</h2>
+                <h2>Each alternative site is missing large areas the current site is not!</h2>
+            </section>
+            <section data-scene="scene16">
+                <h2>Solution:</h2>
+                <h2>Use a combination of sites</h2>
+                <p>
+                    A former Forest Service employee who ran communications for the Forest
+                    Service for 20 years said locating the towers away from the equipment that powers them "would not be a major issue."
+                </p>
+                <p>
+                    By using more than one of the four alternative sites a cumulative viewshed may be able to provide
+                    similar coverage to the current site.
+                </p>
+                <p>
+                    There are 4 combinations that would provide visibility on both sides of Mary's Peak:
+                </p>
+                <p>FAA + Opposite Hill</p>
+                <p>FAA + Mary's Peak east</p>
+                <p>West Point + Opposite Hill</p>
+                <p>West Point + Mary's Peak east</p>
+                <h2>Losses and Gaines</h2>
+                <p>
+                    Each combination will have some visibility lost and some visibility gained when compared with the current site.
+                </p>
+                <p>
+                    To quantifiably determine which alternative site combination is best, the number of visible cells lost was subtracted
+                    from the number of visible cells gained to produce a number that represent the net visibility gain of each combination.
+                </p>
+            </section>
+            <section data-scene="scene17">
+                <h2>Result:</h2>
+                <h2>FAA + Opposite Hill</h2>
+                <p>Net Gain: -2,473,581</p>
+            </section>
+            <section data-scene="scene18">
+                <h2>FAA + Mary's Peak east</h2>
+                <p>Net Gain: -732,683</p>
+            </section>
+            <section data-scene="scene19">
+                <h2>West Point + Opp Hill</h2>
+                <p>Net Gain: -1,735,462</p>
+            </section>
+            <section data-scene="scene20">
+                <h2>West Point + Mary's Peak east</h2>
+                <p>Net Gain: 187,930</p>
+            </section>
+            <section data-scene="scene21">
+                <h2>West Point + Mary's Peak east</h2>
+                <p>
+                    The combination of West Point and Mary's Peak east appear to have the best overall viewshed with a
+                    net gain of 187,930 cells over the current site's viewshed.
+                </p>
+            </section>
+            <section data-scene="scene22">
+                <h2>West Point + Mary's Peak east</h2>
+                <h3>Net Gain: 187,930</h3>
+                <p><b>FAA + OppHill  Net Gain: -2,473,581</b></p>
+                <p><b>FAA + Mary's Peak east Net Gain: -732,683</b></p>
+                <p><b>West Point + OppHill  Net Gain: -1,735,462</b></p>
+
+            </section>
+            <section data-scene="scene23">
+                <h2>Conclusion</h2>
+                <p>
+                    Using the results of this viewshed analysis of Mary’s Peak, the <b>WestPoint+MP_west</b> option is the best
+                    combination of alternative sites among those surveyed. Not only did it have the highest net gain in
+                    visibility, the cells not visible in comparison with the current site had a high degree of dispersion
+                    with no dead zones, as opposed to the FAA+MP_west option.
+                </p>
+            </section>
+            <section data-scene="scene24">
+                <h2>Confusion</h2>
+                <p>
+                    Using the results of this viewshed analysis of Mary’s Peak, the <b>WestPoint+MP_west</b> option is the best
+                    combination of alternative sites among those surveyed. Not only did it have the highest net gain in
+                    visibility, the cells not visible in comparison with the current site had a high degree of dispersion
+                    with no dead zones, as opposed to the FAA+MP_west option.
+                </p>
+            </section>
+            <div class="glyphicon glyphicon-chevron-down arrow-down"></div>
+        </div>
+        <!--map div-->
+        <div id="map" class="col-sm-6 col-md-8 sidebar"></div>
+    </div>
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <h2>Project</h2>
+                    <p>This storymap is an overview of my spatial analysis project for GEOG 361 Winter Term, 2017</p>
+                    <h3>
+                        Sources of Error
+                    </h3>
+                    <p>There are many options within the Viewshed 2 tool offered by ArcGIS (used for this analysis) that can have an effect on the
+                        accuracy of the output. Most notably is the use of Vertical Error. Because this tool is computationally
+                        intensive, I ran the Viewshed 2 tool in a small area with this parameter set to the vertical
+                        error given by the USGS for the NED DEM of 7 meters. The output allows for individual
+                        cells to be labeled as visible or not, as opposed to some sort of density analysis to label
+                        larger areas as visible or not. I was not able to find documentation on this, but it is evident in the
+                        output raster. I compared the difference in number of cells labeled visible by each
+                        option and found that in for the area I analyzed there was a 38% increase in the number of cells labeled
+                        visible when the 7 meter Vertical Error was not computed.</p>
+                    <h3>
+                        Further Research
+                    </h3>
+                    <p>
+                        Because there was such a large difference in the number of visible cells when the Vertical Error was
+                        computed, the workflow should be repeated with this parameter included. Although the resolution of LiDAR
+                        is too high (up to 10 centimeters) to be of practical use as a DEM in viewshed analysis, a small area
+                        could be analyzed along with a DEM to compare the accuracy of between them. This could also be used to
+                        determine if using the Vertical Error parameter increases accuracy. If two viewsheds have a similar net
+                        gain in visibility a density analysis could be run to determine which option is better. If there is any
+                        clustering in lost viewshed cells this would indicate avoidable dead zones by choosing the option with
+                        the least clustering.
+                    </p>
+                    <p><b>Author:</b> Nathan Van Cleave, nathan.vancleave@oregonstate.edu | College of Earth, Ocean, Atmospheric Science | Oregon State University </p>
+                    <p><b>Photo Credit:</b> gazettetimes.com| Retrieved on 3/16/2017 and wanderingaroundoregon.wordpress.com | Retrieved on 3/17/2017 </p>
+                    <p><b>NED DEM:</b>  USGS |</p>
+                    <p><b>Storymap template:</b>  Bo Zhao, zhao2@oregonstate.edu, Oregon State University </p>
+                    <p>The favicon image is my dog Jetta Jane</a></p>
+                    <p>This story map uses geospatial data from Mapbox.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main javascript -->
+<script type="text/javascript">
+
+    var alt_legend ='<i style="background: green; opacity: 0.5"></i><p><b>Combined Alternative Viewshed</b></p>';
+    var faa_legend ='<i style="background: green; opacity: 0.5"></i><p><b>FAA Viewshed</b></p>';
+    var wstpnt_legend ='<i style="background: green; opacity: 0.5"></i><p><b>West Point Viewshed</b></p>';
+    var ophil_legend ='<i style="background: green; opacity: 0.5"></i><p><b>OppHill Viewshed</b></p>';
+    var mpwst_legend ='<i style="background: green; opacity: 0.5"></i><p><b>Marys Peak east Viewshed</b></p>';
+    var crnt_legend = '<i style="background: red; opacity: 0.5"></i><p><b>Current Veiwshed</b></p>';
+    var lost_legend = '<i style="background: hotpink; opacity: 0.5"></i><p><b>Viewshed Lost</b></p>';
+    var gained_legend = '<i style="background: dodgerblue; opacity: 0.5"></i><p><b>Viewshed Gained</b></p>';
+
+
+    var layers = {
+        'layer 1': [ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {id: 'mapbox.satellite'}), ],
+        'layer 2': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: red; opacity: 0.5"></i><p><b>Current Viewshed</b></p>'],
+        'layer 3': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5})],
+        'layer 4': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Alternative Viewshed</b></p>'],
+
+        'crntS': [ L.geoJson.ajax('crnt.geojson',  {
+            color: 'red',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), crnt_legend, alt_legend],
+        'faaS': [ L.geoJson.ajax('faa.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), faa_legend],
+        'mpwstS': [ L.geoJson.ajax('mpwst.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), mpwst_legend],
+        'ophilS': [ L.geoJson.ajax('ophil.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), ophil_legend],
+        'wstpntS': [ L.geoJson.ajax('wstpnt.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), wstpnt_legend],
+        'faa_mpwstC': [ L.geoJson.ajax('faa_mpwstC.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), alt_legend],
+        'faa_ophilC': [ L.geoJson.ajax('faa_ophilC.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), alt_legend],
+        'wstpnt_mpwstC': [ L.geoJson.ajax('wstpnt_mpwstC.geojson',  {
+            color: 'green',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), alt_legend],
+        'faa_mpwstL': [ L.geoJson.ajax('faa_mpwstL.geojson',  {
+            color: 'hotpink',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), lost_legend],
+        'faa_ophilL': [ L.geoJson.ajax('faa_ophilL.geojson',  {
+            color: 'hotpink',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), lost_legend],
+        'wstpnt_mpwstL': [ L.geoJson.ajax('wstpnt_mpwstL.geojson',  {
+            color: 'hotpink',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), lost_legend],
+        'wstpnt_ophilL': [ L.geoJson.ajax('wstpnt_ophilL.geojson',  {
+            color: 'hotpink',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), lost_legend],
+        'faa_mpwstG': [ L.geoJson.ajax('faa_mpwstG.geojson',  {
+            color: 'dodgerblue',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), gained_legend],
+        'faa_ophilG': [ L.geoJson.ajax('faa_ophilG.geojson',  {
+            color: 'dodgerblue',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), gained_legend],
+        'wstpnt_mpwstG': [ L.geoJson.ajax('wstpnt_mpwstG.geojson',  {
+            color: 'dodgerblue',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), gained_legend],
+        'wstpnt_ophilG': [ L.geoJson.ajax('wstpnt_ophilG.geojson',  {
+            color: 'dodgerblue',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), gained_legend],
+        'faa': [ L.marker([44.507166, -123.565516])],
+        'wstpnt': [ L.marker([44.507330, -123.572350])],
+        'ophil': [ L.marker([44.507476, -123.548886])],
+        'mpwst': [ L.marker([44.504322, -123.551666])],
+        'maryspeak': [ L.marker([44.504316, -123.552467])]
+
+    };
+
+    var scenes = {
+//        Mary's Peak
+        scene1: {lat: 45.0098309, lng: -124.2363408, zoom: 8, layers: ['layer 1','maryspeak']},
+//        At the summit
+        scene2: {lat: 44.6196556, lng: -123.6909537, zoom: 10, layers: ['layer 1','maryspeak']},
+//        A call for chagne
+        scene3: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 1','maryspeak']},
+//        Alternative location
+        scene4: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 1', 'faa','wstpnt','ophil','mpwst']},
+//        West Point
+        scene5: {lat: 44.5071433, lng: -123.5760314, zoom: 17, layers: ['layer 1','wstpnt']},
+//        FAA
+        scene6: {lat: 44.5074291, lng: -123.5664687, zoom: 17, layers: ['layer 1','faa','wstpnt']},
+//       Opphill
+        scene8: {lat: 44.5042289, lng: -123.5528571, zoom: 17, layers: ['layer 1','ophil','faa','wstpnt','mpwst']},
+//        Marys peak east
+        scene7: {lat: 44.5071883, lng: -123.5500754, zoom: 17, layers: ['layer 1','ophil','faa','wstpnt','mpwst']},
+//        Comparrisons
+        scene9: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 1', 'faa','wstpnt','ophil','mpwst']},
+//        How viewshed works
+        scene10: {lat: 44.9554349, lng: -124.2363408, zoom: 8, layers: ['layer 2','crntS','maryspeak']},
+//        Results: west point
+        scene11: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpntS','wstpnt',]},
+//        FAA
+        scene12: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faaS','faa']},
+//        MPeast
+        scene13: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','mpwstS','mpwst']},
+//        Ophil
+        scene14: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','ophilS','ophil']},
+//        Problem
+        scene15: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faaS','crnt','crnt','faa']},
+//    Solution
+        scene16: {lat: 44.5057364, lng: -123.5744294, zoom: 14, layers: ['layer 3','faa','wstpnt','mpwst','ophil']},
+//        Result: faa + opphill
+        scene17: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faa_ophilL','faa_ophilG','faa','ophil']},
+//        faa + marys peak
+        scene18: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','faa_mpwstL','faa_mpwstG','faa','mpwst']},
+//        wstpnt+ophil
+        scene19: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpnt_ophilL','wstpnt_ophilG','wstpnt','ophil']},
+//        wstpnt + maryspeak
+        scene20: {lat: 44.5072519, lng: -123.5606227, zoom: 11, layers: ['layer 3','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
+//        west point = mary's perk east zoomed in
+        scene21: {lat: 44.5057364, lng: -123.5744294, zoom: 15, layers: ['layer 1','wstpnt','mpwst']},
+//         West Point + Marys Peak east zoomed out
+        scene22: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpnt_mpwstC','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
+//         Conclusion
+        scene23: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','layer 2','crntS','wstpnt_mpwstC','maryspeak']},
+        scene24: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','layer 2','crntS','wstpnt_mpwstC','maryspeak']}
+    };
+
+    $('.main').storymap({
+        scenes: scenes,
+        layers: layers,
+        legend: true
+    });
+
+
+</script>
+</body>
+</html>
