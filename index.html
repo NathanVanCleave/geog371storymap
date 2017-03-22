@@ -59,9 +59,12 @@
                 <div class="subtitle">Nathan Van Cleave - Oregon State University</div>
             <section data-scene="scene1">
                 <h2>Mary's Peak</h2>
-                <p>Mary’s Peak, sitting 15 miles west of Corvallis, Oregon is the highest point in the Coastal Mountain Range rising to 4,097ft. On-going tectonic forces raised the basaltic seafloor to it’s current height 30 million years ago, and continue to push it higher</p>
-                <img src="lookingnorth.jpg" class="img-responsive" alt="responsive image" alt-text="the flag of oregon">
-                <p>Picture: Looking North from the summit</p>
+                <p>Mary’s Peak, sitting 15 miles west of Corvallis, Oregon is the highest point in the Coastal Mountain Range
+                    rising to 4,097ft. The mountain is easily accessible to visitors via a road built in 1948 that ends just 200ft
+                from the summit. An easy 1/4 mile walk to the top offers 360 degree unobstructed views, from the pacific ocean to the
+                Willamette Valley</p>
+                <img src="lookingnorth.jpg" class="img-responsive" alt="responsive image" alt-text="Looking west">
+                <p>Pictured: Looking west from the summit</p>
             </section>
 
             <section data-scene="scene2">
@@ -94,6 +97,9 @@
                     wanting the site altered or removed altogether.
                 </p>
                 <img src="microwave.jpg" class="img-responsive">
+                <p>
+                    Pictured: Looking east with Mt. Jefferson and the Three Sisters on the horizon
+                </p>
             </section>
             <section data-scene="scene4">
                 <h2>Alternative Locations</h2>
@@ -173,7 +179,7 @@
                     This particular DEM was created by photogrammetric methods.
                 </p>
                 <p>
-                    Shown here in red is the current communication's site viewshed.
+                    Shown here in red is the result of the viewshed analysis for the current communication's site viewshed.
                 </p>
             </section>
             <section data-scene="scene11">
@@ -225,7 +231,7 @@
                 </p>
                 <p>
                     To quantifiably determine which alternative site combination is best, the number of visible cells lost was subtracted
-                    from the number of visible cells gained to produce a number that represent the net visibility gain of each combination.
+                    from the number of visible cells gained to produce a number that represents the net visibility gain of each combination.
                 </p>
             </section>
             <section data-scene="scene17">
@@ -258,18 +264,8 @@
                 <p><b>FAA + OppHill  Net Gain: -2,473,581</b></p>
                 <p><b>FAA + Mary's Peak east Net Gain: -732,683</b></p>
                 <p><b>West Point + OppHill  Net Gain: -1,735,462</b></p>
-
             </section>
             <section data-scene="scene23">
-                <h2>Conclusion</h2>
-                <p>
-                    Using the results of this viewshed analysis of Mary’s Peak, the <b>WestPoint+MP_west</b> option is the best
-                    combination of alternative sites among those surveyed. Not only did it have the highest net gain in
-                    visibility, the cells not visible in comparison with the current site had a high degree of dispersion
-                    with no dead zones, as opposed to the FAA+MP_west option.
-                </p>
-            </section>
-            <section data-scene="scene24">
                 <h2>Confusion</h2>
                 <p>
                     Using the results of this viewshed analysis of Mary’s Peak, the <b>WestPoint+MP_west</b> option is the best
@@ -277,6 +273,11 @@
                     visibility, the cells not visible in comparison with the current site had a high degree of dispersion
                     with no dead zones, as opposed to the FAA+MP_west option.
                 </p>
+            </section>
+            <section data-scene="scene25">
+                <h2>Ocean View</h2>
+                <img src="lookingnorth.jpg" class="img-responsive" alt="responsive image" alt-text="Looking west">
+                <p>Shown in red on the right is the visibility seen in this picture</p>
             </section>
             <div class="glyphicon glyphicon-chevron-down arrow-down"></div>
         </div>
@@ -352,6 +353,11 @@
         'layer 3': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5})],
         'layer 4': [ L.tileLayer('https://api.mapbox.com/styles/v1/nathanvc/cj0fx870n00232skgpqhi869o/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmF0aGFudmMiLCJhIjoiY2lyeDI3dzU2MDA2eTJ6b2Zzc3o0aHYyZCJ9.uz49BJJoY2WmlDqeNw7SlQ', {detectRetina: true, color: 'orange', weight: 5}), '<i style="background: greenyellow; opacity: 0.5"></i><p><b>Alternative Viewshed</b></p>'],
 
+        'crntclip': [ L.geoJson.ajax('crnt_clip.geojson',  {
+            color: 'red',
+            weight: 1,
+            fillOpacity: .8,
+            opacity: 1}), crnt_legend, alt_legend],
         'crntS': [ L.geoJson.ajax('crnt.geojson',  {
             color: 'red',
             weight: 1,
@@ -487,7 +493,9 @@
         scene22: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','wstpnt_mpwstC','wstpnt_mpwstL','wstpnt_mpwstG','wstpnt','mpwst']},
 //         Conclusion
         scene23: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','layer 2','crntS','wstpnt_mpwstC','maryspeak']},
-        scene24: {lat: 44.5072519, lng: -123.5606227, zoom: 10, layers: ['layer 3','layer 2','crntS','wstpnt_mpwstC','maryspeak']}
+//        Ocean views
+        scene25: {lat: 44.6084673, lng: -123.9271439, zoom: 11, layers: ['layer 1','maryspeak','crntclip']},
+
     };
 
     $('.main').storymap({
